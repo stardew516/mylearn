@@ -1,0 +1,13 @@
+.clearfix{
+    zoom: 1;
+}
+.clearfix:after{
+    display: block;
+    content: '';
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.input_label{
+    display: block;
+}
