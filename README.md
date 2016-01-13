@@ -7,4 +7,5 @@ Usually study accumulation
     2. nmp init  创建package.json(生成一些配置信息)
     3. npm install express --save 安装express
     4. npm install grunt --save-dev 安装grunt
+二、require的text插件可以允许它模块化载入css
 

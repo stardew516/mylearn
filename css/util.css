@@ -8,6 +8,49 @@
     overflow: hidden;
     clear: both;
 }
+span,a{
+    display: inline-block;
+}
 .input_label{
     display: block;
+    margin-bottom: 6px;
 }
+.input_label span{
+    width: 112px;
+    text-align: right;
+}
+.select{
+    /*font-size: 14px;*/
+    width: 150px;
+}
+
+/*select插件样式*/
+.plug-select-outer{
+    position: relative;
+    display: inline-block;
+}
+.plug-in-select-outer{
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+/*select插件样式*/
+
+/*图片放大*/
+.img-bigger{
+    cursor: zoom-in;
+    cursor: -webkit-zoom-in;
+}
+.plug-big-img{
+    position: absolute;
+    cursor: zoom-out;
+    cursor: -webkit-zoom-out;
+}
+/*图片放大*/

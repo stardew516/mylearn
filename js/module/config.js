@@ -1,13 +1,15 @@
 require.config({
 	baseUrl: '../js/',
 	paths: {
+		css: 'lib/css',
+		style: '../css',
 		jquery: 'lib/jquery-2.1.4',
 		mCustomScrollbar: 'lib/jquery.mousewheel',
 		util: 'module/util',
 		utils: 'module/jquery.util'
 	},
 	shim: {
-
+		util: ['utils']
 	},
 	urlArgs: "v=" +  (new Date()).getTime()
 });

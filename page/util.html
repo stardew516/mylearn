@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>实用</title>
-    <link href="../css/util.css" type="text/css"/>
+    <!--<link href="../css/util.css" type="text/css" rel="stylesheet"/>-->
 </head>
 <body>
     <label class="phone_label input_label">
@@ -20,7 +20,31 @@
     </label>
     <label class="number_label input_label">
         <span>请输入数字：</span>
-        <input class="int" placeholder="只能输入数字"/>
+        <input class="number" placeholder="只能输入数字"/>
+    </label>
+    <label class="select_label input_label">
+        <span>可变样式选择：</span>
+        <select class="select">
+            <option>请选择</option>
+            <option data-id="1" value="value1" data-name="11">选择1</option>
+            <option data-id="2" value="value2">选择2</option>
+            <option data-id="3" value="value3">选择3</option>
+            <option data-id="4" value="value4">选择4</option>
+        </select>
+    </label>
+    <label class="select_label input_label">
+        <span>可变样式选择：</span>
+        <select class="select">
+            <option>请选择</option>
+            <option data-id="1" value="value1" data-name="11">选择11</option>
+            <option data-id="2" value="value2">选择22</option>
+            <option data-id="3" value="value3">选择33</option>
+            <option data-id="4" value="value4">选择44</option>
+        </select>
+    </label>
+    <label class="image_label input_label">
+        <span>鼠标移入放大：</span>
+        <img class="img-bigger" src="../css/img/mask.jpg" width="100" />
     </label>
 </body>
 <script type="text/javascript" src="../js/lib/require.js" data-main="../js/module/config.js"></script>
