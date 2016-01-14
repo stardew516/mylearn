@@ -24,7 +24,7 @@ span,a{
     width: 150px;
 }
 
-/*select插件样式*/
+/*select插件样式---开始*/
 .plug-select-outer{
     position: relative;
     display: inline-block;
@@ -41,9 +41,9 @@ span,a{
     padding: 0 5px;
     cursor: pointer;
 }
-/*select插件样式*/
+/*select插件样式---结束*/
 
-/*图片放大*/
+/*图片放大样式---开始*/
 .img-bigger{
     cursor: zoom-in;
     cursor: -webkit-zoom-in;
@@ -53,4 +53,58 @@ span,a{
     cursor: zoom-out;
     cursor: -webkit-zoom-out;
 }
-/*图片放大*/
+.plug-big-img img{
+    width: 100%;
+}
+/*图片放大样式---结束*/
+
+/*商品数量限制样式---开始*/
+.plug-good-num{
+    display: inline-block;
+    margin: 0;
+}
+.plug-good-num span {
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.plug-good-num input {
+    float: left;
+    width: 55px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 28px;
+    height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: #d7d7d7;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+.plug-good-num input.onn{
+    color: #666;
+}
+.plug-good-num span.minus,.plug-good-num span.add.gray{
+    background-color: #d7d7d7;
+}
+.plug-good-num span.add{
+    background-color: #fc5d55;
+}
+
+.plug-good-num span.onn{
+    background-color: #da2a2f;
+}
+/*商品数量限制样式---结束*/
