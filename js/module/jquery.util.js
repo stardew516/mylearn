@@ -233,7 +233,7 @@ define(['jquery','css!style/util.css'],function($,css){
                     }
                 }
                 $.goodsnumbers.updateValue.call($that,nextValue);
-                $inputer.addClass("onn");
+                nextValue > 0 ? $inputer.addClass("onn") : $inputer.removeClass("onn");
             },
             valueInputed: function(e){
                 var $inputer = $(this);
@@ -247,7 +247,7 @@ define(['jquery','css!style/util.css'],function($,css){
                 if( value < opts.minValue){
                     value = curValue < value ? opts.minValue : 0;
                 }
-                $inputer.addClass("onn");
+                value > 0 ? $inputer.addClass("onn") : $inputer.removeClass("onn");
                 $.goodsnumbers.updateValue.call( $that , value);
             },
             getCurrentValue: function(){
