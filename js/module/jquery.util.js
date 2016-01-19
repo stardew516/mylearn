@@ -176,6 +176,7 @@ define(['jquery','css!style/util.css'],function($,css){
                 };
                 var opts = $.extend({}, defaults  , option);
                 //iterate and reformat each matched element
+                console.log($t,typeof $t);
                 return $t.each(function(){
                     $this = $(this);
                     var $minusBtn = $this.find( '.'+opts.minusBtnClass );
