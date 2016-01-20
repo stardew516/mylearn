@@ -9,6 +9,7 @@
     2. nmp init  创建package.json(生成一些配置信息)
     3. npm install express --save 安装express
     4. npm install grunt --save-dev 安装grunt
+        a.在项目的根路径下创建 Gruntfile.js
     5. npm install tmodjs --save-dev 安装前端模板预编译工具
     6. npm install -g gulp 全局安装前端自动化工具gulp
         a. npm install gulp --save-dev gulp安装到项目
