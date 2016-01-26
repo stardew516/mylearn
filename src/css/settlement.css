@@ -1,0 +1,194 @@
+.settlement{position: fixed;right: 0;top: 0;z-index: 999;font-size: 12px;height: 100%;font-family: "微软雅黑", "MicrosoftYahei", "黑体", "Helvetica";}
+.settlement-number{font-family: 'Helvetica';}
+.settlement a{cursor: pointer;}
+.text-center{text-align: center;}
+.color-light-gray{color: #999;}
+.color-gray{color: #666;}
+.color-deep-gray{color: #999;}
+.color-ccc{color: #ccc;}
+.color-yellow{color: #ffbd03;}
+.float-left{float: left;}
+.float-right{float: right;}
+.bold{font-weight: bold;}
+.f14{font-size: 14px;}
+.f18{font-size: 18px;}
+.mgt14{margin-top: 14px;}
+.mgt4{margin-top: 4px;}
+.mg10{margin: 10px;}
+.clearfix{zoom: 1;}
+.clearfix:after{clear: both;overflow: hidden;content: '';height: 0;display: block;}
+.relative{position: relative;}
+.settlement input[type='checkbox']{margin: 0;}
+.settlement-shrink-icon,.good-minus,.good-add,.good-add.on{background: url("../../Public/images/settlement/settlement.png") no-repeat;}
+.word-vertical{width: 16px;display: inline-block;}
+.settlement-shrink{width: 37px;border: 1px solid #d2d2d2;background-color: #ededef;height: 100%;}
+.settlement-item{position: relative;}
+.settlement-item{/*margin-top: 220px;*/color: #ff5b4f;text-align: center;display: block;padding: 5px 0;}
+.settlement-item.on,.settlement-item:hover{background-color: #ff5b4f;color: #fff;}
+.settlement-shrink-icon{width: 20px;height: 20px;display: block;margin: 0 auto;}
+.settlement-cart-icon{background-position: -9px -10px;}
+.settlement-assets-icon{background-position: -32px -38px;}
+.settlement-order-icon{background-position: -55px -38px;}
+.settlement-needs-icon{background-position: -77px -38px;}
+.settlement-quote-icon{background-position: -166px -38px;}
+.settlement-twocode-icon{background-position: -145px -38px;}
+.settlement-feedback-icon{background-position: -122px -38px;}
+.settlement-top-icon{background-position: -100px -38px;}
+.settlement-cart.on .settlement-cart-icon,.settlement-cart:hover .settlement-cart-icon{background-position: -9px -62px;}
+.settlement-assets.on .settlement-assets-icon,.settlement-assets:hover .settlement-assets-icon{background-position: -32px -62px;}
+.settlement-order.on .settlement-order-icon,.settlement-order:hover .settlement-order-icon{background-position: -55px -62px;}
+.settlement-needs.on .settlement-needs-icon,.settlement-needs:hover .settlement-needs-icon{background-position: -77px -62px;}
+.settlement-quote.on .settlement-quote-icon,.settlement-quote:hover .settlement-quote-icon{background-position: -166px -62px;}
+.settlement-twocode.on .settlement-twocode-icon,.settlement-twocode:hover .settlement-twocode-icon{background-position: -145px -62px;}
+.settlement-feedback.on .settlement-feedback-icon,.settlement-feedback:hover .settlement-feedback-icon{background-position: -122px -62px;}
+.settlement-top.on .settlement-top-icon,.settlement-top:hover .settlement-top-icon{background-position: -100px -62px;}
+.settlement-tip{position: absolute;right: 60px;bottom: 0;width: 84px;height: 30px;white-space: nowrap;display: inline-block;background: #4b4b4b;color: #fff;line-height: 30px;text-align: center;display: none;}
+.settlement-tip-quote{width: 200px;}
+.settlement-tip-twocode{width: 170px;height: 200px;background: url("../../Public/images/settlement/twocode.jpg") no-repeat 0 0;}
+.settlement-tip-arrow{position: absolute;right: -10px;bottom: 10px;width: 20px;height: 20px;display: inline-block;font-size: 20px;color: #4b4b4b;}
+.settlement-tip-twocode .settlement-tip-arrow{color: #fff;}
+.settlement-cart .settlement-tip{top: 28px;}
+
+.no-certify{border: 1px solid #d2d2d2;width: 248px;height: 224px;padding: 24px 35px;position: fixed;right: 38px;background-color: #fff;}
+.close-certify,.clear-phone{display: inline-block;width: 30px;height: 30px;text-align: center;line-height: 30px;font-size: 18px;color: #c2c2c2;position: absolute;top: 0;right: 0;cursor: pointer;}
+.certify-label{margin-top: 76px;color: #999;text-align: center;}
+.certify-button{display: inline-block;cursor: pointer;width: 250px;height: 30px;text-align: center;line-height: 30px;color: #fff;background-color: #ff5c4e;margin: 20px auto;}
+.certify-button:hover{color: #fff;}
+.input-phone,.input-security-code{width: 240px;padding: 0 5px;height: 30px;line-height: 30px;margin: 6px auto 12px auto;}
+.input-security-code{width: 120px;}
+.get-security-code{width: 106px;height: 32px;text-align: center;cursor: pointer;background-color: #efefef;color: #e93728;margin: 6px 0 12px 8px;border: 1px solid #e5e5e5;}
+.clear-phone{top: 8px;font-size: 14px;color: #3a3a3a;}
+
+.settlement-open{width: 280px;border: 1px solid #d2d2d2;border-left: 0;height: 100%;background-color: #f1f1f1;}
+.settlement-open-list{display: none;background-color: #f1f1f1;height: 100%;overflow: scroll;}
+.cart-operate{height: 60px;line-height: 60px;background-color: #f1f1f1;}
+.settlement-open-close{margin: 0 30px;cursor: pointer;}
+.view-all-settlement{margin: 0 30px;text-decoration: underline;}
+.view-all-settlement:hover{color: #333;}
+.clear-failed-goods{text-decoration: underline;cursor: pointer;}
+.settlement-open-list.on{display: block;}
+.settlement-goods-title{background-color: #989898;height: 40px;line-height: 40px;padding: 0 20px;color: #fff;}
+.merchant-name{border-bottom: 1px solid #ccc;line-height: 30px;height: 30px;padding: 0 15px;background-color: #fff;}
+.color-seven-gray{color: #777;}
+.settlement-good-lists{margin-bottom: 10px;}
+.settlement-good-list{padding: 0 15px;background-color: #f8f8f8;position: relative;display: block;overflow: hidden;border-bottom: 1px solid #f1f1f1;cursor: default;}
+.settlement-good-list.selected,.settlement-good-list.select{background-color: #fff;}
+.single-good-checkbox{margin-top: 29px!important;}
+.settlement-good-detail{display: inline-block;width: 236px;}
+.settlement-good-top{padding-top: 7px;}
+.settlement-good-left{display: inline-block;margin: 0 10px 0 5px;background-color: #f6f6f6;}
+.settlement-good-right{width: 170px;}
+.settlement-good-name{margin-top: 10px;}
+.settlement-good-number{margin-top: 5px;}
+.good-minus{width: 16px;height: 16px;background-position: -46px -88px;cursor: pointer;}
+.good-number{width: 66px;text-align: center;height: 16px;line-height: 16px;border: 0;background-color: transparent;}
+.good-add{width: 16px;height: 16px;cursor: pointer;background-position: -63px -109px;}
+.good-add.on{background-position: -82px -109px;}
+.good-add.gray{background-position: -46px -109px;cursor: default;}
+.good-minus.gray{cursor: default;}
+.settlement-good-bottom{margin: 5px;}
+.settlement .settlement-delete-good{position: absolute;top: 10px;right: 12px;color: #bfbfbf;font-size: 24px;display: none;cursor: pointer;}
+.settlement-good-list.selected .settlement-delete-good{display: block;}
+.settlement-delete-good:hover{color: #666;text-decoration: none;}
+.activity-price{}
+.red-price{margin-left: 10px;}
+.important-callout{color: #ff0000;}
+.already-selected{line-height: 30px;margin-left: 25px;}
+.selected-goods-price{color: #c1262c;margin-left: 25px;}
+.settlement-activity{line-height: 30px;margin-left: 25px;}
+.no-decoration{text-decoration: none;}
+.my-ticket{width: 118px;height: 65px;background: #ffab31;color: #fff;}
+.my-appoint{margin-left: 10px;background-color: #ccc;}
+.my-assets{width: 246px;margin: 10px auto;}
+.ticket-category li{float: left;color: #808080;background-color: #fff;height: 26px;width: 69px;line-height: 26px;text-align: center;margin-right: 1px;cursor: default;}
+.ticket-category li.on{color: #f24f52;border-bottom: 1px solid #f24f52;}
+.settlement-ticket{width: 260px;height: 70px;margin: 10px auto;}
+.settlement-ticket-left{width: 62px;height: 100%;color: #fff;padding: 0 14px 0 8px;position: relative;}
+.red-ticket .settlement-ticket-left{background-color: #f24f52;}
+.red-ticket .ticket-name{color: #f24f52;}
+.yellow-ticket .settlement-ticket-left{background-color: #d3be00;}
+.yellow-ticket .ticket-name{color: #d3be00;}
+.blue-ticket .settlement-ticket-left{background-color: #42abed;}
+.blue-ticket .ticket-name{color: #42abed;}
+.gray-ticket .settlement-ticket-left{background-color: #ccc;}
+.gray-ticket .ticket-name{color: #666;}
+.ticket-value{text-align: left;border-bottom: 1px solid #fff;white-space: nowrap;}
+.settlement-ticket-right{background-color: #fff;padding: 0 10px;width: 154px;white-space: nowrap;height: 100%;}
+.ticket-icon{position: absolute;width: 3px;height: 70px;background: url("../../Public/images/settlement/quan-edge.png") repeat-y 0 0;top: 0;right: 0;}
+.settlement-ticket.used .settlement-ticket-right{background: #fff url("../../Public/images/settlement/ticket-used.png") no-repeat 72px 8px; z-index: 222;}
+.settlement-ticket.dated .settlement-ticket-right{background: #fff url("../../Public/images/settlement/ticket-dated.png") no-repeat 72px 8px;z-index: 222}
+.your-opinion{width: 250px;height: 155px;margin: 0 auto;background-color: #fff;display: block;}
+.settlement-feedback-open{color: #808080;}
+.telephone-num{width: 250px;padding: 0 5px;height: 30px;line-height: 30px;}
+
+
+@keyframes hide-show
+{
+    0%{height: 0}
+    25%{height: 25%}
+    50%{height: 50%}
+    75%{height: 75%}
+    100%{height: 100%}
+}
+
+@-moz-keyframes hide-show /* Firefox */
+{
+    0%{height: 0}
+    25%{height: 25%}
+    50%{height: 50%}
+    75%{height: 75%}
+    100%{height: 100%}
+}
+
+@-webkit-keyframes hide-show /* Safari 和 Chrome */
+{
+    0%{height: 0}
+    25%{height: 25%}
+    50%{height: 50%}
+    75%{height: 75%}
+    100%{height: 100%}
+}
+
+@-o-keyframes hide-show /* Opera */
+{
+    0%{height: 0}
+    25%{height: 25%}
+    50%{height: 50%}
+    75%{height: 75%}
+    100%{height: 100%}
+}
+
+.settlement-open-list.on
+{
+    animation: hide-show 0.5s;
+    -moz-animation: hide-show 0.5s;	/* Firefox */
+    -webkit-animation: hide-show 0.5s;	/* Safari 和 Chrome */
+    -o-animation: hide-show 0.5s;	/* Opera */
+}
+
+@-moz-keyframes rotate /* Safari 和 Chrome */
+{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+@-webkit-keyframes rotate /* Safari 和 Chrome */
+{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+@-o-keyframes rotate /* Safari 和 Chrome */
+{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+@keyframes rotate /* Safari 和 Chrome */
+{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+.settlement-item:hover .settlement-shrink-icon{
+    -moz-animation: rotate 0.2s linear 0s 2;	/* Firefox */
+    -webkit-animation: rotate 0.2s linear 0s 2;	/* Safari 和 Chrome */
+    -o-animation: rotate 0.2s linear 0s 2;	/* Opera */
+    animation: rotate 0.2s linear 0s 2;
+}

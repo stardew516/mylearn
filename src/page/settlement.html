@@ -1,0 +1,739 @@
+<link rel="stylesheet" href="/Public/css/settlement.css"/>
+
+<div class="settlement clearfix">
+    <div class="certify">
+        <!--未登录-->
+        <div class="no-certify no-login" style="display: none;">
+            <span class="close-certify">✕</span>
+            <p class="">手机号：</p>
+            <p class="color-light-gray relative">
+                <input type="text" value="" maxlength="11" class="input-phone" placeholder="请输入手机号"/>
+                <span class="clear-phone">✕</span>
+            </p>
+            <p class="">验证码：</p>
+            <p class="color-light-gray clearfix">
+                <input class="float-left input-security-code" type="text" value="" maxlength="6" placeholder="请输入验证码"/>
+                <button class="float-left get-security-code">获取验证码</button>
+            </p>
+            <p class="text-center"><a class="certify-button settlement-login-button">登录</a></p>
+        </div>
+        <!--未认证-->
+        <div class="no-certify" style="display: none;">
+            <span class="close-certify">✕</span>
+            <p class="certify-label">您还没有认证哦，认证即可购买</p>
+            <p class="text-center"><a class="certify-button" href="{:U('Reg/index')}" target="_blank">门店认证</a></p>
+        </div>
+    </div>
+    <!--结算栏收缩-->
+    <div class="settlement-shrink float-left">
+        <a class="settlement-item settlement-cart settlement-show on">
+            <span class="settlement-shrink-icon settlement-cart-icon"></span>
+            <em class="word-vertical">购物车</em>
+            <span class="settlement-tip">我的购物车<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+        <a class="settlement-item settlement-assets settlement-show">
+            <span class="settlement-shrink-icon settlement-assets-icon"></span>
+            <span class="settlement-tip">我的资产<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+        <a class="settlement-item settlement-order">
+            <span class="settlement-shrink-icon settlement-order-icon"></span>
+            <span class="settlement-tip">我的订单<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+        <a class="settlement-item settlement-needs">
+            <span class="settlement-shrink-icon settlement-needs-icon"></span>
+            <span class="settlement-tip">我的需求单<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+        <a class="settlement-item settlement-quote">
+            <span class="settlement-shrink-icon settlement-quote-icon"></span>
+            <span class="settlement-tip settlement-tip-quote">您有0个报价,单点击前往查看哦<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+        <a class="settlement-item settlement-twocode">
+            <span class="settlement-shrink-icon settlement-twocode-icon"></span>
+            <span class="settlement-tip settlement-tip-twocode">二维码<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+        <a class="settlement-item settlement-feedback settlement-show">
+            <span class="settlement-shrink-icon settlement-feedback-icon"></span>
+            <span class="settlement-tip">意见反馈<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+        <a class="settlement-item settlement-top">
+            <span class="settlement-shrink-icon settlement-top-icon"></span>
+            <span class="settlement-tip">顶部<em class="settlement-tip-arrow">◆</em></span>
+        </a>
+    </div>
+    <!--结算栏展开-->
+    <div class="settlement-open float-left">
+        <div class="settlement-open-list settlement-cart-open on clearfix">
+            <p class="cart-operate clearfix">
+                <span class="float-left settlement-open-close color-light-gray">》</span>
+                <a class="float-left view-all-settlement color-gray">全屏查看</a>
+                <span class="float-left clear-failed-goods color-light-gray">清除失效宝贝</span>
+            </p>
+            <div class="settlement-goods-outer">
+                <ul class="settlement-goods">
+                    <li class="settlement-goods-list">
+                        <p class="settlement-goods-title clearfix">
+                            <span class="float-left">淘汽档口</span>
+                            <label class="float-right">
+                                <input type="checkbox" class="whole-checkbox"/>
+                                <span>全选</span>
+                            </label>
+                        </p>
+                        <p class="merchant-name">
+                            <label>
+                                <input type="checkbox" class="title-checkbox whole-son-checkbox"/>
+                                <span class="color-light-gray">特卖汇</span>
+                            </label>
+                        </p>
+                        <ul class="settlement-good-lists">
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left  whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <span class="settlement-delete-good">⊗</span>
+                            </li>
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left  whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <a class="settlement-delete-good">⊗</a>
+                            </li>
+                        </ul>
+                        <p class="merchant-name">
+                            <label>
+                                <input type="checkbox" class="title-checkbox  whole-son-checkbox"/>
+                                <span class="color-light-gray">合能风暴</span>
+                            </label>
+                        </p>
+                        <ul class="settlement-good-lists">
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left  whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <span class="settlement-delete-good">⊗</span>
+                            </li>
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left  whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <a class="settlement-delete-good">⊗</a>
+                            </li>
+                        </ul>
+                        <div class="settlement-buy">
+                            <p class="already-selected">已选<span class="cart-num">88888</span>件</p>
+                            <p class="selected-goods-price"><span>共计￥<em class="cart-price">9999.00</em></span><span class="red-price">优惠￥<em class="discount">4444.00</em></span></p>
+                            <p class="text-center"><a class="certify-button settlement-buy-button">立即结算</a></p>
+                        </div>
+                    </li>
+                    <li class="settlement-goods-list">
+                        <p class="settlement-goods-title clearfix">
+                            <span class="float-left">供应商A</span>
+                            <label class="float-right">
+                                <input type="checkbox"  class="whole-checkbox"/>
+                                <span>全选</span>
+                            </label>
+                        </p>
+                        <p class="merchant-name">
+                            <label>
+                                <input type="checkbox" class="title-checkbox whole-son-checkbox"/>
+                                <span class="color-light-gray">特卖汇</span>
+                            </label>
+                        </p>
+                        <ul class="settlement-good-lists">
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <span class="settlement-delete-good">⊗</span>
+                            </li>
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <a class="settlement-delete-good">⊗</a>
+                            </li>
+                        </ul>
+                        <p class="merchant-name">
+                            <label>
+                                <input type="checkbox" class="title-checkbox whole-son-checkbox"/>
+                                <span class="color-light-gray">合能风暴</span>
+                            </label>
+                        </p>
+                        <ul class="settlement-good-lists">
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <span class="settlement-delete-good">⊗</span>
+                            </li>
+                            <li class="settlement-good-list clearfix">
+                                <p class="settlement-activity">首单<span class="important-callout">返现50元</span></p>
+                                <input type="checkbox" class="single-good-checkbox float-left whole-son-checkbox"/>
+                                <div class="settlement-good-detail float-left">
+                                    <div class="settlement-good-top clearfix">
+                                        <div class="settlement-good-left float-left">
+                                            <img src="" width="50" height="50" onerror="this.src='http://img.tqmall.com/images/no_picture.gif'"/>
+                                        </div>
+                                        <div class="settlement-good-right float-left">
+                                            <p class="settlement-good-name color-light-gray">壳牌灰壳超凡喜力......</p>
+                                            <div class="settlement-good-number clearfix">
+                                                <span class="good-minus float-left"></span>
+                                                <input type="text" class="good-number float-left color-light-gray" maxlength="4" value="1" name="" data-listprice="100" data-goodsid="" data-actid="" data-groupid=""  data-price="50" data-orlprice="100"  data-alreadybuynum="10" data-actname="" data-max="100" data-min="1" data-remain="200" />
+                                                <span class="good-add float-left"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="settlement-good-bottom clearfix">
+                                        <span class="color-seven-gray activity-price">活动价：￥4558.00</span>
+                                        <span class="color-light-gray red-price">红包价：<del>￥5558.00</del></span>
+                                    </p>
+                                </div>
+                                <a class="settlement-delete-good">⊗</a>
+                            </li>
+                        </ul>
+                        <div class="settlement-buy">
+                            <p class="already-selected">已选<span class="cart-num">88888</span>件</p>
+                            <p class="selected-goods-price"><span>共计￥<em class="cart-price">9999.00</em></span><span class="red-price">优惠￥<em class="discount">4444.00</em></span></p>
+                            <p class="text-center"><a class="certify-button settlement-buy-button">立即结算</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="settlement-open-list settlement-assets-open clearfix">
+            <p class="cart-operate clearfix">
+                <span class="float-left settlement-open-close color-light-gray">》</span>
+                <span class="float-left view-all-settlement color-gray bold no-decoration">我的资产</span>
+            </p>
+            <div class="my-assets clearfix">
+                <div class="my-ticket float-left">
+                    <p class="f14 bold text-center mgt14">18</p>
+                    <p class="text-center">优惠券</p>
+                </div>
+                <div class="my-ticket my-appoint float-left">
+                    <p class="f14 bold text-center mgt14">599</p>
+                    <p class="text-center">积分</p>
+                </div>
+            </div>
+            <ul class="ticket-category clearfix">
+                <li class="on">全部</li>
+                <li>未使用</li>
+                <li>已使用</li>
+                <li>已过期</li>
+            </ul>
+            <div class="tickets">
+                <div class="settlement-ticket red-ticket clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（新人有礼）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+                <div class="settlement-ticket gray-ticket dated clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（积分有礼）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+                <div class="settlement-ticket red-ticket clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（新人有礼）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+                <div class="settlement-ticket blue-ticket used clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（云修活动）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+                <div class="settlement-ticket red-ticket clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（砸金蛋活动）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+                <div class="settlement-ticket yellow-ticket clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（合能活动）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+                <div class="settlement-ticket blue-ticket used clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（云修活动）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+                <div class="settlement-ticket gray-ticket dated clearfix">
+                    <div class="settlement-ticket-left float-left text-center">
+                        <p class="mgt4">优惠券</p>
+                        <p class="ticket-value">￥<span class="bold f18">100</span></p>
+                        <p>待使用</p>
+                        <div class="ticket-icon"></div>
+                    </div>
+                    <div class="settlement-ticket-right float-left">
+                        <p class="mgt4 ticket-name">（积分有礼）</p>
+                        <p class="mgt4 color-ccc">有效期</p>
+                        <p class="color-ccc">2015-09-03至2015-09-28</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settlement-open-list settlement-feedback-open clearfix">
+            <p class="cart-operate clearfix">
+                <span class="float-left settlement-open-close color-light-gray">》</span>
+                <span class="float-left view-all-settlement color-gray bold no-decoration">意见反馈</span>
+            </p>
+            <p class="mg10">尊敬的用户：</p>
+            <p class="mg10">您好！为了给您提供更好的服务，我们希望收集您使用<span class="color-yellow">淘汽档口</span>时的看法或建议。</p>
+            <p class="mg10">对您的配合和支持表示衷心感谢！</p>
+            <textarea class="your-opinion" placeholder="输入内容仅限300字" maxlength="300"></textarea>
+            <p class="mg10">请留下您的联系电话（可选）</p>
+            <p class="mg10"><input class="telephone-num" maxlength="11" placeholder="请输入你的联系电话" onKeyUp="this.value=this.value.replace(/[^\.\d]/g,'');if(this.value.split('.').length>2){this.value=this.value.split('.')[0]+'.'+this.value.split('.')[1]}"/></p>
+            <p class="text-center"><a class="certify-button submit-feedback">提交</a></p>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.goodsamount.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript">
+
+    /*鼠标移入移出事件 防止多次触发*/
+    function contains(parentNode, childNode) {
+        if (parentNode.contains) {
+            return parentNode != childNode && parentNode.contains(childNode);
+        } else {
+            return !!(parentNode.compareDocumentPosition(childNode) & 16);
+        }
+    }
+    function checkHover(e,target){
+        if (getEvent(e).type=="mouseover")  {
+            return !contains(target,getEvent(e).relatedTarget||getEvent(e).fromElement) && !((getEvent(e).relatedTarget||getEvent(e).fromElement)===target);
+        } else {
+            return !contains(target,getEvent(e).relatedTarget||getEvent(e).toElement) && !((getEvent(e).relatedTarget||getEvent(e).toElement)===target);
+        }
+    }function getEvent(e){
+        return e||window.event;
+    }
+    /*鼠标移入移出事件 防止多次触发*/
+
+    $(document).on("click",".settlement-show",function(){ //点击收缩栏中图标，显示内容
+        var showbox = $('.settlement-open-list').eq($(this).index('.settlement-show'));
+        if($(this).hasClass("on")){
+            if(showbox.hasClass("on")){
+                $('.settlement').animate({"right":-280},600,function(){
+                    showbox.removeClass("on");
+                });
+            }else{
+                showbox.addClass("on");
+                $('.settlement').animate({"right":0},600);
+            }
+        }else{
+            $(this).addClass("on").siblings().removeClass("on");
+            showbox.addClass("on").siblings().removeClass("on")
+            $('.settlement').animate({"right":0},600);
+        }
+    }).on("mouseenter",".settlement-item",function(e){ //提示tip显示
+        if(checkHover(e,this)) {
+            $(this).find(".settlement-tip").show();
+            $(this).find(".settlement-tip").animate({right: 37}, 100);
+        }
+    }).on("mouseout",".settlement-item",function(e){ //提示tip隐藏
+        if(checkHover(e,this)) {
+            $(this).find(".settlement-tip").animate({right: 60}, 100);
+            $(this).find(".settlement-tip").hide();
+        }
+    }).on("click",".settlement-top",function(){ //回顶部
+        $("html,body").animate({scrollTop:0},300);
+        $(this).find(".settlement-tip").hide();
+    }).on("click",".close-certify",function(){ //关闭当前窗口
+        $(this).parent().hide();
+    }).on("click",".clear-phone",function(){ //清除手机号
+        $(".input-phone").val('');
+    }).on("click",".settlement-open-close",function(){ //结算栏收缩
+        $('.settlement').animate({"right":-280},600,function(){
+            $('.settlement-open-list').each(function(){
+                $(this).removeClass("on")
+            });
+        });
+    }).on("mouseenter",".good-add",function(e){ //移入商品添加符号变色
+        if(checkHover(e,this)) {
+            $(this).addClass("on");
+        }
+    }).on("mouseout",".good-add",function(e){ //移出商品添加符号还原
+        if(checkHover(e,this)) {
+            $(this).removeClass("on");
+        }
+    }).on("mouseenter",".settlement-good-list",function(e){ //移入商品背景变色，删除按钮显示
+        if(checkHover(e,this)) {
+            $(this).addClass("selected");
+        }
+    }).on("mouseout",".settlement-good-list",function(e){ //移出商品背景色还原，删除按钮移出
+        if(checkHover(e,this)) {
+            $(this).removeClass("selected");
+        }
+    }).on("click",".ticket-category li",function(){ //优惠券筛选事件
+        if($(this).hasClass("on")){
+            return false;
+        }else{
+            $(this).addClass("on").siblings().removeClass();
+            var index = $(this).index();
+            switch(index){
+                case 0: $(".settlement-ticket").each(function(){
+                    $(this).show();
+                });
+                    break;
+                case 1: $(".settlement-ticket").each(function(){
+                    if($(this).hasClass("used") || $(this).hasClass("dated")){
+                        $(this).hide();
+                    }else{
+                        $(this).show();
+                    }
+                });
+                    break;
+                case 2: $(".settlement-ticket").each(function(){
+                    if($(this).hasClass("used")){
+                        $(this).show();
+                    }else{
+                        $(this).hide();
+                    }
+                });
+                    break;
+                case 3: $(".settlement-ticket").each(function(){
+                    if($(this).hasClass("dated")){
+                        $(this).show();
+                    }else{
+                        $(this).hide();
+                    }
+                });
+                    break;
+
+
+            }
+        }
+    }).on("click",".submit-feedback",function(){ //提交意见反馈
+        var tel = Number($(".telephone-num").val());
+        if(tel){
+            var reg = /^0?1[3|4|5|8][0-9]\d{8}$/;
+            if (!reg.test(tel)){
+                alert("号码有误~");
+                return false;
+            }
+        }
+        var text = $(".your-opinion").val();
+        if(!text){
+            alert("意见不能为空！")
+        }else{
+            alert("意见提交成功!")
+        }
+    }).on("click",".whole-checkbox",function(){ //勾选全部
+        var check = $(this).attr("checked") ? true : false;
+        $(this).closest(".settlement-goods-list").find(".whole-son-checkbox").attr("checked",check);
+        $(this).closest(".settlement-goods-list").find(".single-good-checkbox").each(function(){
+            $(this).attr("checked") ? $(this).parent().addClass("select") : $(this).parent().removeClass("select");
+        });
+        cartprice.Price();
+    }).on("click",".title-checkbox",function(){ //勾选当前活动下得全部商品
+        var check = $(this).attr("checked") ? true : false;
+        var tcheck = $(this).closest(".merchant-name").next(".settlement-good-lists");
+        tcheck.find(".single-good-checkbox").attr("checked",check);
+        tcheck.find(".single-good-checkbox").each(function(){
+            $(this).attr("checked") ? $(this).parent().addClass("select") : $(this).parent().removeClass("select");
+        });
+        var checked = false;
+        $(this).closest(".settlement-goods-list").find(".title-checkbox").each(function(){
+            checked = $(this).attr("checked") ? false : true;
+            if(checked){
+                $(this).closest(".settlement-goods-list").find(".whole-checkbox").attr("checked",false);
+                return false;
+            }else{
+                $(this).closest(".settlement-goods-list").find(".whole-checkbox").attr("checked",true);
+            }
+        });
+        cartprice.Price();
+    }).on("click",".single-good-checkbox",function(){ //勾选当前商品
+        $(this).attr("checked") ? $(this).parent().addClass("select") : $(this).parent().removeClass("select");
+        var checked = false,check = false;
+        var thisli = $(this).closest(".settlement-goods-list");
+        var tcheck = $(this).closest(".settlement-good-lists");
+        tcheck.find(".single-good-checkbox").each(function(){
+            check = $(this).attr("checked") ? false : true;
+            if(check){
+                tcheck.prev(".merchant-name").find(".title-checkbox").attr("checked",false);
+                return false;
+            }else{
+                tcheck.prev(".merchant-name").find(".title-checkbox").attr("checked",true);
+            }
+        });
+        thisli.find(".title-checkbox").each(function(){
+            checked = $(this).attr("checked") ? false : true;
+            if(checked){
+                thisli.find(".whole-checkbox").attr("checked",false);
+                return false;
+            }else{
+                thisli.find(".whole-checkbox").attr("checked",true);
+            }
+        });
+        cartprice.Price();
+    }).on("click",".settlement-delete-good",function(){ //删除当前商品
+        $(this).closest("li").remove();
+        cartprice.Price();
+    });
+    /* ----------------------------购物车商品数量加减 开始---------------------------- */
+    /*初始化传入参数*/
+    function getCartNum(min, max, remain, alreadyBuyNum) {
+        var minNum = min;
+        var maxNum = Math.min((max - alreadyBuyNum), remain);
+        if (maxNum < minNum) {
+            minNum = maxNum;
+        }
+        return {
+            minNum: min,
+            maxNum: maxNum,
+            startNum: min
+        };
+
+    }
+    /*获得传入参数*/
+    function cartNumSet(status, that) {
+        var $n, min, max, curn, alreadybuynum, minMaxObj;
+        if (that) {
+            var min = $(this).data('min');
+            var max = $(this).data('max');
+            var remain = $(this).data('remain');
+            if (remain === '') {
+                remain = max;
+            }
+            alreadybuynum = $(this).data('alreadybuynum') || 0;
+            minMaxObj = getCartNum(min, max, remain, alreadybuynum);
+        }
+        /* status:0  初始化*/
+        var valueChangedCallback = function() {
+            cartprice.Price();
+        };
+        if (status == 0) {
+            $(".settlement-good-number").each(function() {
+                var min = $(this).find("input").data('min');
+                var max = $(this).find("input").data('max');
+                var remain = $(this).find("input").data('remain');
+                if (remain === "") {
+                    remain = max;
+                }
+                alreadybuynum = $(this).find("input").data('alreadybuynum') || 0;
+                minMaxObj = getCartNum(min, max, remain, alreadybuynum);
+                $(this).goodsamount({
+                    addBtnClass   :'good-add',
+                    minusBtnClass:'good-minus',
+                    checkbox: 1,
+                    initValue: 0,
+                    maxValue: minMaxObj.maxNum,
+                    minValue: minMaxObj.minNum,
+                    startValue: minMaxObj.startNum,
+                    valueChangedCallback: valueChangedCallback
+                });
+            });
+            return;
+        }
+    }
+    var cartprice = {};
+    cartprice.Price = function () {
+        var pr1 = 0, pr2 = 0, s = 0;
+        $(".settlement-goods-list").each(function(){
+            var that = $(this);
+            that.find(".good-number").each(function(){
+                if($(this).closest("li").find(".single-good-checkbox").attr("checked")){
+                    var n = parseInt($(this).val());
+                    if (n > 0) {
+                        pr1 += n * Number($(this).data('price'));
+                        pr2 += n * Number($(this).data('listprice'));
+                        s += n;
+                    }
+                }
+            });
+            that.find(".cart-num").html(s);
+            that.find(".cart-price").html(pr1.toFixed(2));
+            that.find(".discount").html((pr2-pr1).toFixed(2));
+        });
+    };
+    $(document).ready(function(){
+        cartNumSet(0,null);
+    });
+    /* ----------------------------购物车商品数量加减 结束---------------------------- */
+
+</script>
