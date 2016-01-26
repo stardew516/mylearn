@@ -18,8 +18,11 @@
 .clearfix{zoom: 1;}
 .clearfix:after{clear: both;overflow: hidden;content: '';height: 0;display: block;}
 .relative{position: relative;}
+.select{
+    width: auto!important;
+}
 .settlement input[type='checkbox']{margin: 0;}
-.settlement-shrink-icon,.good-minus,.good-add,.good-add.on{background: url("../../Public/images/settlement/settlement.png") no-repeat;}
+.settlement-shrink-icon,.good-minus,.good-add,.good-add.on{background: url("img/settlement/settlement.png") no-repeat;}
 .word-vertical{width: 16px;display: inline-block;}
 .settlement-shrink{width: 37px;border: 1px solid #d2d2d2;background-color: #ededef;height: 100%;}
 .settlement-item{position: relative;}
@@ -44,8 +47,8 @@
 .settlement-top.on .settlement-top-icon,.settlement-top:hover .settlement-top-icon{background-position: -100px -62px;}
 .settlement-tip{position: absolute;right: 60px;bottom: 0;width: 84px;height: 30px;white-space: nowrap;display: inline-block;background: #4b4b4b;color: #fff;line-height: 30px;text-align: center;display: none;}
 .settlement-tip-quote{width: 200px;}
-.settlement-tip-twocode{width: 170px;height: 200px;background: url("../../Public/images/settlement/twocode.jpg") no-repeat 0 0;}
-.settlement-tip-arrow{position: absolute;right: -10px;bottom: 10px;width: 20px;height: 20px;display: inline-block;font-size: 20px;color: #4b4b4b;}
+.settlement-tip-twocode{width: 170px;height: 200px;background: url("img/settlement/twocode.jpg") no-repeat 0 0;}
+.settlement-tip-arrow{position: absolute;right: -7px;bottom: 8px;width: 20px;height: 20px;display: inline-block;font-size: 20px;color: #4b4b4b;}
 .settlement-tip-twocode .settlement-tip-arrow{color: #fff;}
 .settlement-cart .settlement-tip{top: 28px;}
 
@@ -114,9 +117,9 @@
 .gray-ticket .ticket-name{color: #666;}
 .ticket-value{text-align: left;border-bottom: 1px solid #fff;white-space: nowrap;}
 .settlement-ticket-right{background-color: #fff;padding: 0 10px;width: 154px;white-space: nowrap;height: 100%;}
-.ticket-icon{position: absolute;width: 3px;height: 70px;background: url("../../Public/images/settlement/quan-edge.png") repeat-y 0 0;top: 0;right: 0;}
-.settlement-ticket.used .settlement-ticket-right{background: #fff url("../../Public/images/settlement/ticket-used.png") no-repeat 72px 8px; z-index: 222;}
-.settlement-ticket.dated .settlement-ticket-right{background: #fff url("../../Public/images/settlement/ticket-dated.png") no-repeat 72px 8px;z-index: 222}
+.ticket-icon{position: absolute;width: 3px;height: 70px;background: url("img/settlement/quan-edge.png") repeat-y 0 0;top: 0;right: 0;}
+.settlement-ticket.used .settlement-ticket-right{background: #fff url("img/settlement/ticket-used.png") no-repeat 72px 8px; z-index: 222;}
+.settlement-ticket.dated .settlement-ticket-right{background: #fff url("img/settlement/ticket-dated.png") no-repeat 72px 8px;z-index: 222}
 .your-opinion{width: 250px;height: 155px;margin: 0 auto;background-color: #fff;display: block;}
 .settlement-feedback-open{color: #808080;}
 .telephone-num{width: 250px;padding: 0 5px;height: 30px;line-height: 30px;}

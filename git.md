@@ -9,6 +9,7 @@
  1. 新建文件
  2. git加入到本地文件版本库 git add git.md
  3. git commit -m 'test git' git.md
+ 4. git stash 暂存当前内容   git stash pop{0} 释放
 
   使用git命令没有工具方便，而且有延时，有木有，删一个文件，命令行显示删除成功，
   但要再点一下才能立马知道真的删了，不然文件看着还在，以为没删呢。
