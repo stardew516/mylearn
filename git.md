@@ -11,6 +11,7 @@
  3. git commit -m 'test git' git.md  提交单个文件；  git commit -m 'cart' *  提交所有文件
  4. git stash 暂存当前内容   git stash pop{0} 释放
  5. git push  推送到服务器
+ 6. git rm -f src/js/dist/gulp/all.js 删除某个文件
   使用git命令没有工具方便，而且有延时，有木有，删一个文件，命令行显示删除成功，
   但要再点一下才能立马知道真的删了，不然文件看着还在，以为没删呢。
 

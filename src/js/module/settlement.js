@@ -15,10 +15,21 @@ define(['jquery','utils','css!style/index.min.css','css!style/settlement.css'],f
                     } else {
                         return !contains(target,getEvent(e).relatedTarget||getEvent(e).toElement) && !((getEvent(e).relatedTarget||getEvent(e).toElement)===target);
                     }
-                }function getEvent(e){
+                }
+                function getEvent(e){
                     return e||window.event;
                 }
                 /*鼠标移入移出事件 防止多次触发*/
+
+                //阻止事件冒泡
+                function stopPropagation(e) {
+                    e = e || window.event;
+                    if(e.stopPropagation) {
+                        e.stopPropagation();
+                    } else {
+                        e.cancelBubble = true;
+                    }
+                }
 
                 $(document).on("click",".settlement-show",function(){ //点击收缩栏中图标，显示内容
                     var showbox = $('.settlement-open-list').eq($(this).index('.settlement-show'));
@@ -37,15 +48,15 @@ define(['jquery','utils','css!style/index.min.css','css!style/settlement.css'],f
                         $('.settlement').animate({"right":0},600);
                     }
                 }).on("mouseenter",".settlement-item",function(e){ //提示tip显示
-                    if(checkHover(e,this)) {
+                    //if(checkHover(e,this)) {
                         $(this).find(".settlement-tip").show();
                         $(this).find(".settlement-tip").animate({right: 37}, 100);
-                    }
-                }).on("mouseout",".settlement-item",function(e){ //提示tip隐藏
-                    if(checkHover(e,this)) {
+                    //}
+                }).on("mouseleave",".settlement-item",function(e){ //提示tip隐藏  mouseleave  方法更简便
+                    //if(checkHover(e,this)) {
                         $(this).find(".settlement-tip").animate({right: 60}, 100);
                         $(this).find(".settlement-tip").hide();
-                    }
+                    //}
                 }).on("click",".settlement-top",function(){ //回顶部
                     $("html,body").animate({scrollTop:0},300);
                     $(this).find(".settlement-tip").hide();

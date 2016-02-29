@@ -7,6 +7,7 @@ require.config({
 		mCustomScrollbar: 'lib/jquery.mousewheel',
 		util: 'module/util',
 		utils: 'module/jquery.util',
+		zodiac: 'module/zodiac',
 		settlement: 'module/settlement'
 	},
 	shim: {
@@ -18,6 +19,7 @@ require(['jquery'], function ($) {
 
 	var hash = {
 		util       : 'util',
+		zodiac		: 'zodiac',
 		settlement		: 'settlement'
 	};
 	function init(){

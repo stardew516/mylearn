@@ -48,7 +48,7 @@
 .settlement-tip{position: absolute;right: 60px;bottom: 0;width: 84px;height: 30px;white-space: nowrap;display: inline-block;background: #4b4b4b;color: #fff;line-height: 30px;text-align: center;display: none;}
 .settlement-tip-quote{width: 200px;}
 .settlement-tip-twocode{width: 170px;height: 200px;background: url("img/settlement/twocode.jpg") no-repeat 0 0;}
-.settlement-tip-arrow{position: absolute;right: -7px;bottom: 8px;width: 20px;height: 20px;display: inline-block;font-size: 20px;color: #4b4b4b;}
+.settlement-tip-arrow{position: absolute;right: -9px;bottom: 10px;width: 20px;height: 20px;display: inline-block;font-size: 20px;color: #4b4b4b;}
 .settlement-tip-twocode .settlement-tip-arrow{color: #fff;}
 .settlement-cart .settlement-tip{top: 28px;}
 
@@ -169,7 +169,7 @@
     -o-animation: hide-show 0.5s;	/* Opera */
 }
 
-@-moz-keyframes rotate /* Safari 和 Chrome */
+@-moz-keyframes rotate
 {
     0% {transform:rotate(0deg);}
     100% {transform:rotate(360deg);}
@@ -179,12 +179,12 @@
     0% {transform:rotate(0deg);}
     100% {transform:rotate(360deg);}
 }
-@-o-keyframes rotate /* Safari 和 Chrome */
+@-o-keyframes rotate
 {
     0% {transform:rotate(0deg);}
     100% {transform:rotate(360deg);}
 }
-@keyframes rotate /* Safari 和 Chrome */
+@keyframes rotate
 {
     0% {transform:rotate(0deg);}
     100% {transform:rotate(360deg);}
