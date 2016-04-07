@@ -1,0 +1,564 @@
+{
+  "data": [
+	{
+	  "province": "贵州",
+	  "city": "黔西南布依族苗族自治州",
+	  "isp": "电信",
+	  "totalTime": 2388.23,
+	  "resolutionTime": 192.93,
+	  "connectTime": 88.72,
+	  "loadTime": 2106.59,
+	  "loadSpeed": 67.38
+	},
+	{
+	  "province": "山西",
+	  "city": "晋城",
+	  "isp": "联通",
+	  "totalTime": 6541.72,
+	  "resolutionTime": 151.87,
+	  "connectTime": 154.82,
+	  "loadTime": 6235.03,
+	  "loadSpeed": 22.76
+	},
+	{
+	  "province": "湖南",
+	  "city": "长沙",
+	  "isp": "联通",
+	  "totalTime": 8062.85,
+	  "resolutionTime": 116.43,
+	  "connectTime": 36.19,
+	  "loadTime": 7910.24,
+	  "loadSpeed": 17.94
+	},
+	{
+	  "province": "辽宁",
+	  "city": "葫芦岛市",
+	  "isp": "联通",
+	  "totalTime": 7671.99,
+	  "resolutionTime": 132.24,
+	  "connectTime": 48.69,
+	  "loadTime": 7491.05,
+	  "loadSpeed": 18.95
+	},
+	{
+	  "province": "辽宁",
+	  "city": "沈阳市",
+	  "isp": "移动",
+	  "totalTime": 823.86,
+	  "resolutionTime": 28.99,
+	  "connectTime": 39.04,
+	  "loadTime": 755.84,
+	  "loadSpeed": 187.79
+	},
+	{
+	  "province": "广西",
+	  "city": "南宁市",
+	  "isp": "电信",
+	  "totalTime": 735.59,
+	  "resolutionTime": 33.86,
+	  "connectTime": 44.86,
+	  "loadTime": 656.87,
+	  "loadSpeed": 216.08
+	},
+	{
+	  "province": "重庆",
+	  "city": "重庆市",
+	  "isp": "移动",
+	  "totalTime": 1118.47,
+	  "resolutionTime": 35.06,
+	  "connectTime": 31.92,
+	  "loadTime": 1051.49,
+	  "loadSpeed": 134.99
+	},
+	{
+	  "province": "湖南",
+	  "city": "郴州市",
+	  "isp": "电信",
+	  "totalTime": 4088.55,
+	  "resolutionTime": 140.11,
+	  "connectTime": 29.43,
+	  "loadTime": 3919,
+	  "loadSpeed": 36.22
+	},
+	{
+	  "province": "天津",
+	  "city": "天津市",
+	  "isp": "联通",
+	  "totalTime": 1038.52,
+	  "resolutionTime": 1.12,
+	  "connectTime": 28.1,
+	  "loadTime": 1009.31,
+	  "loadSpeed": 140.63
+	},
+	{
+	  "province": "河南",
+	  "city": "郑州市",
+	  "isp": "电信",
+	  "totalTime": 3905.33,
+	  "resolutionTime": 31.89,
+	  "connectTime": 36.77,
+	  "loadTime": 3836.66,
+	  "loadSpeed": 37.00
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "电信",
+	  "totalTime": 9763.39,
+	  "resolutionTime": 2837.9,
+	  "connectTime": 152.04,
+	  "loadTime": 6773.45,
+	  "loadSpeed": 20.96
+	},
+	{
+	  "province": "香港",
+	  "city": "香港",
+	  "isp": "香港新世界",
+	  "totalTime": 2257.34,
+	  "resolutionTime": 32.37,
+	  "connectTime": 36.55,
+	  "loadTime": 2188.42,
+	  "loadSpeed": 64.86
+	},
+	{
+	  "province": "上海",
+	  "city": "上海市",
+	  "isp": "电信",
+	  "totalTime": 266.97,
+	  "resolutionTime": 6.88,
+	  "connectTime": 5.46,
+	  "loadTime": 254.63,
+	  "loadSpeed": 557.43
+	},
+	{
+	  "province": "上海",
+	  "city": "上海市",
+	  "isp": "电信",
+	  "totalTime": 9725.95,
+	  "resolutionTime": 28.94,
+	  "connectTime": 79.68,
+	  "loadTime": 9617.33,
+	  "loadSpeed": 14.76
+	},
+	{
+	  "province": "广东",
+	  "city": "珠海市",
+	  "isp": "电信",
+	  "totalTime": 3704.44,
+	  "resolutionTime": 32.25,
+	  "connectTime": 152.08,
+	  "loadTime": 3520.11,
+	  "loadSpeed": 40.32
+	},
+	{
+	  "province": "江苏",
+	  "city": "常州市",
+	  "isp": "电信",
+	  "totalTime": 8129.42,
+	  "resolutionTime": 71.52,
+	  "connectTime": 9.52,
+	  "loadTime": 8048.37,
+	  "loadSpeed": 17.64
+	},
+	{
+	  "province": "香港",
+	  "city": "香港",
+	  "isp": "电信",
+	  "totalTime": 10365.33,
+	  "resolutionTime": 171.33,
+	  "connectTime": 151.46,
+	  "loadTime": 10042.54,
+	  "loadSpeed": 14.13
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "电信通",
+	  "totalTime": 5504.55,
+	  "resolutionTime": 3.83,
+	  "connectTime": 53.1,
+	  "loadTime": 5447.62,
+	  "loadSpeed": 26.06
+	},
+	{
+	  "province": "山东",
+	  "city": "济南市",
+	  "isp": "联通",
+	  "totalTime": 9865.22,
+	  "resolutionTime": 132.42,
+	  "connectTime": 154.56,
+	  "loadTime": 9578.24,
+	  "loadSpeed": 14.82
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "电信",
+	  "totalTime": 5905.17,
+	  "resolutionTime": 27.69,
+	  "connectTime": 24.04,
+	  "loadTime": 5853.44,
+	  "loadSpeed": 24.25
+	},
+	{
+	  "province": "江苏",
+	  "city": "南京市",
+	  "isp": "电信",
+	  "totalTime": 6468.85,
+	  "resolutionTime": 72.21,
+	  "connectTime": 7.6,
+	  "loadTime": 6389.03,
+	  "loadSpeed": 22.22
+	},
+	{
+	  "province": "上海",
+	  "city": "上海市",
+	  "isp": "电信",
+	  "totalTime": 7091.55,
+	  "resolutionTime": 0.86,
+	  "connectTime": 156.95,
+	  "loadTime": 6933.74,
+	  "loadSpeed": 20.47
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "电信",
+	  "totalTime": 9287.69,
+	  "resolutionTime": 74.83,
+	  "connectTime": 156.43,
+	  "loadTime": 9056.43,
+	  "loadSpeed": 15.67
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "联通",
+	  "totalTime": 5159.38,
+	  "resolutionTime": 28.1,
+	  "connectTime": 156.46,
+	  "loadTime": 4974.82,
+	  "loadSpeed": 28.53
+	},
+	{
+	  "province": "河北",
+	  "city": "秦皇岛市",
+	  "isp": "电信",
+	  "totalTime": 4001.94,
+	  "resolutionTime": 38.39,
+	  "connectTime": 154.15,
+	  "loadTime": 3809.4,
+	  "loadSpeed": 37.26
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "教育网",
+	  "totalTime": 6853.08,
+	  "resolutionTime": 58.08,
+	  "connectTime": 31.82,
+	  "loadTime": 6763.18,
+	  "loadSpeed": 20.98
+	},
+	{
+	  "province": "上海",
+	  "city": "上海市",
+	  "isp": "电信",
+	  "totalTime": 10393.66,
+	  "resolutionTime": 58.86,
+	  "connectTime": 6.57,
+	  "loadTime": 10328.23,
+	  "loadSpeed": 13.74
+	},
+	{
+	  "province": "河南",
+	  "city": "郑州市",
+	  "isp": "电信",
+	  "totalTime": 8699.14,
+	  "resolutionTime": 54.5,
+	  "connectTime": 31.26,
+	  "loadTime": 8613.38,
+	  "loadSpeed": 16.48
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "联通",
+	  "totalTime": 3023.54,
+	  "resolutionTime": 0.18,
+	  "connectTime": 31.59,
+	  "loadTime": 2991.78,
+	  "loadSpeed": 47.44
+	},
+	{
+	  "province": "江苏",
+	  "city": "常州市",
+	  "isp": "电信",
+	  "totalTime": 8337.69,
+	  "resolutionTime": 11.21,
+	  "connectTime": 10.08,
+	  "loadTime": 8316.4,
+	  "loadSpeed": 17.07
+	},
+	{
+	  "province": "上海",
+	  "city": "上海市",
+	  "isp": "移动",
+	  "totalTime": 8096.87,
+	  "resolutionTime": 1.23,
+	  "connectTime": 152.69,
+	  "loadTime": 7942.95,
+	  "loadSpeed": 17.87
+	},
+	{
+	  "province": "上海",
+	  "city": "上海市",
+	  "isp": "联通",
+	  "totalTime": 7646.64,
+	  "resolutionTime": 4067.82,
+	  "connectTime": 6.73,
+	  "loadTime": 3572.09,
+	  "loadSpeed": 39.74
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "移动",
+	  "totalTime": 8193.89,
+	  "resolutionTime": 78.66,
+	  "connectTime": 31.21,
+	  "loadTime": 8084.02,
+	  "loadSpeed": 17.56
+	},
+	{
+	  "province": "湖南",
+	  "city": "怀化市",
+	  "isp": "电信",
+	  "totalTime": 4746.31,
+	  "resolutionTime": 100.1,
+	  "connectTime": 151.25,
+	  "loadTime": 4494.97,
+	  "loadSpeed": 31.58
+	},
+	{
+	  "province": "云南",
+	  "city": "昆明市",
+	  "isp": "电信",
+	  "totalTime": 5597.39,
+	  "resolutionTime": 50.55,
+	  "connectTime": 1252.9,
+	  "loadTime": 4293.94,
+	  "loadSpeed": 33.06
+	},
+	{
+	  "province": "河南",
+	  "city": "郑州市",
+	  "isp": "联通",
+	  "totalTime": 7137.31,
+	  "resolutionTime": 46.44,
+	  "connectTime": 30.63,
+	  "loadTime": 7060.24,
+	  "loadSpeed": 20.10
+	},
+	{
+	  "province": "福建",
+	  "city": "福州市",
+	  "isp": "电信",
+	  "totalTime": 7011.96,
+	  "resolutionTime": 119.28,
+	  "connectTime": 16.79,
+	  "loadTime": 6875.89,
+	  "loadSpeed": 20.64
+	},
+	{
+	  "province": "福建",
+	  "city": "福州市",
+	  "isp": "联通",
+	  "totalTime": 4700.1,
+	  "resolutionTime": 47.06,
+	  "connectTime": 32.49,
+	  "loadTime": 4620.55,
+	  "loadSpeed": 30.72
+	},
+	{
+	  "province": "陕西",
+	  "city": "西安市",
+	  "isp": "电信",
+	  "totalTime": 9451.26,
+	  "resolutionTime": 32.64,
+	  "connectTime": 29.37,
+	  "loadTime": 9389.24,
+	  "loadSpeed": 15.12
+	},
+	{
+	  "province": "重庆",
+	  "city": "重庆市",
+	  "isp": "电信",
+	  "totalTime": 7483.81,
+	  "resolutionTime": 193.16,
+	  "connectTime": 51.56,
+	  "loadTime": 7239.1,
+	  "loadSpeed": 19.61
+	},
+	{
+	  "province": "湖北",
+	  "city": "武汉市",
+	  "isp": "电信",
+	  "totalTime": 6328.95,
+	  "resolutionTime": 113.07,
+	  "connectTime": 1.53,
+	  "loadTime": 6214.35,
+	  "loadSpeed": 22.84
+	},
+	{
+	  "province": "天津",
+	  "city": "天津市",
+	  "isp": "联通",
+	  "totalTime": 9351.58,
+	  "resolutionTime": 115.04,
+	  "connectTime": 29.16,
+	  "loadTime": 9207.38,
+	  "loadSpeed": 15.42
+	},
+	{
+	  "province": "安徽",
+	  "city": "合肥市",
+	  "isp": "电信",
+	  "totalTime": 8111.92,
+	  "resolutionTime": 9.64,
+	  "connectTime": 11.37,
+	  "loadTime": 8090.91,
+	  "loadSpeed": 17.54
+	},
+	{
+	  "province": "陕西",
+	  "city": "西安市",
+	  "isp": "联通",
+	  "totalTime": 7458.74,
+	  "resolutionTime": 147.3,
+	  "connectTime": 48.2,
+	  "loadTime": 7263.24,
+	  "loadSpeed": 19.54
+	},
+	{
+	  "province": "江苏",
+	  "city": "无锡市",
+	  "isp": "联通",
+	  "totalTime": 14498.25,
+	  "resolutionTime": 17.42,
+	  "connectTime": 45.6,
+	  "loadTime": 14435.23,
+	  "loadSpeed": 9.83
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "联通",
+	  "totalTime": 7188.56,
+	  "resolutionTime": 28.23,
+	  "connectTime": 32.59,
+	  "loadTime": 7127.74,
+	  "loadSpeed": 19.91
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "电信",
+	  "totalTime": 6084.36,
+	  "resolutionTime": 27.7,
+	  "connectTime": 29.15,
+	  "loadTime": 6027.51,
+	  "loadSpeed": 23.55
+	},
+	{
+	  "province": "浙江",
+	  "city": "宁波市",
+	  "isp": "电信",
+	  "totalTime": 6604.93,
+	  "resolutionTime": 7.29,
+	  "connectTime": 7.71,
+	  "loadTime": 6589.93,
+	  "loadSpeed": 21.54
+	},
+	{
+	  "province": "北京",
+	  "city": "北京市",
+	  "isp": "电信",
+	  "totalTime": 6702.26,
+	  "resolutionTime": 27.76,
+	  "connectTime": 29.35,
+	  "loadTime": 6645.16,
+	  "loadSpeed": 21.36
+	},
+	{
+	  "province": "四川",
+	  "city": "成都市",
+	  "isp": "电信",
+	  "totalTime": 6401.04,
+	  "resolutionTime": 4.44,
+	  "connectTime": 39.24,
+	  "loadTime": 6357.36,
+	  "loadSpeed": 22.33
+	},
+	{
+	  "province": "黑龙江",
+	  "city": "哈尔滨市",
+	  "isp": "联通",
+	  "totalTime": 5287.75,
+	  "resolutionTime": 0.95,
+	  "connectTime": 63.58,
+	  "loadTime": 5223.22,
+	  "loadSpeed": 27.17
+	},
+	{
+	  "province": "河北",
+	  "city": "石家庄市",
+	  "isp": "联通",
+	  "totalTime": 6915.95,
+	  "resolutionTime": 1.61,
+	  "connectTime": 32.43,
+	  "loadTime": 6881.92,
+	  "loadSpeed": 20.62
+	},
+	{
+	  "province": "湖北",
+	  "city": "武汉市",
+	  "isp": "电信",
+	  "totalTime": 7103.9,
+	  "resolutionTime": 13.33,
+	  "connectTime": 16.6,
+	  "loadTime": 7073.97,
+	  "loadSpeed": 20.07
+	},
+	{
+	  "province": "广东",
+	  "city": "广州市",
+	  "isp": "电信",
+	  "totalTime": 6628.3,
+	  "resolutionTime": 147.54,
+	  "connectTime": 24.39,
+	  "loadTime": 6456.37,
+	  "loadSpeed": 21.98
+	},
+	{
+	  "province": "四川",
+	  "city": "内江市",
+	  "isp": "移动",
+	  "totalTime": 5709.61,
+	  "resolutionTime": 32.84,
+	  "connectTime": 39.1,
+	  "loadTime": 5637.67,
+	  "loadSpeed": 25.18
+	},
+	{
+	  "province": "江西",
+	  "city": "赣州市",
+	  "isp": "电信",
+	  "totalTime": 5318.12,
+	  "resolutionTime": 101.18,
+	  "connectTime": 25.49,
+	  "loadTime": 5191.45,
+	  "loadSpeed": 27.34
+	}
+  ]
+}
