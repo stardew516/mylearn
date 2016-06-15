@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>react入门</title>
+
+</head>
+<body>
+    <p>1. react：基本语法</p>
+    <div id="demo1"></div>
+    <p>2. react：遍历</p>
+    <div id="demo2"></div>
+    <p>3. react：数组</p>
+    <div id="demo3"></div>
+    <p>4. react：组件</p>
+    <div id="demo4"></div>
+    <p>5. react：所有组件的子节点</p>
+    <div id="demo5"></div>
+    <p>6. react：组件的属性</p>
+    <div id="demo6"></div>
+    <p>7. react：获取真实的dom节点</p>
+    <div id="demo7"></div>
+    <p>8. react：</p>
+    <div id="demo8"></div>
+    <p>9. react：</p>
+    <div id="demo9"></div>
+    <p>10. react：</p>
+    <div id="demo10"></div>
+    <p>11. react：</p>
+    <div id="demo11"></div>
+    <script type="text/babel">
+        //demo1
+        ReactDOM.render(
+            <h1>Hello, react!</h1>,
+            document.getElementById('demo1')
+        );
+
+        //demo2
+        var names = ['lulu', 'xiaolu','xiaoluyatou'];
+
+        ReactDOM.render(
+            <ol>
+            {
+                names.map(function(name){
+                    return <li> hello {name} </li>
+                })
+            }
+            </ol>,
+            document.getElementById('demo2')
+        );
+
+        //demo3
+        var arr = [
+            'hello lulu',
+            'hello xiaolu',
+            'hello xiaoluyatou'
+        ]
+
+        ReactDOM.render(
+            <ol>
+                <li>{arr}</li>
+            </ol>,
+            document.getElementById('demo3')
+
+        );
+
+        //demo4
+        var HelloMessage = React.createClass({
+            render: function(){
+                return <p> hello {this.props.name} </p>;
+            }
+        });
+
+        ReactDOM.render(
+            <HelloMessage name = 'lulu'/>,
+            document.getElementById('demo4')
+        );
+
+        //demo5
+        var NodeList = React.createClass({
+            render: function(){
+                return (
+                    <ol>
+                        {React.Children.map(this.props.children,function(name){
+                            return <li> {name} </li>;
+                        })}
+                    </ol>
+                )
+            }
+        });
+        ReactDOM.render(
+            <NodeList>
+                <span>hello</span>
+                <span>lulu</span>
+            </NodeList>,
+            document.getElementById('demo5')
+        );
+        //demo6
+        var data = '123';
+        var MyTitle = React.createClass({
+            propTypes: {
+                title: React.PropTypes.string.isRequired
+            },
+            getDefaultProps: function(){
+                return {
+                    title: 'hello lulu'
+                }
+            },
+            render: function(){
+                return <p> 字符串 {this.props.title} </p>;
+            }
+        });
+
+        ReactDOM.render(
+            <MyTitle title = {data} />,
+            //<MyTitle />,
+            document.getElementById('demo6')
+        );
+        //demo7
+        var MyClick = React.createClass({
+            handleClick: function(){
+                this.refs.inputTxt.focus()
+            },
+            render: function(){
+                return (
+                    <div>
+                        <input type = "text" ref = "inputTxt" />
+                        <input type = "button" value = "click me to focus input" onClick = {this.handleClick}/>
+                    </div>
+                )
+            }
+        });
+        ReactDOM.render(
+            <MyClick />,
+            document.getElementById('demo7')
+
+        );
+    </script>
+    <script type="text/javascript" src="/mylearn/src/js/lib/react/react.js"></script>
+    <script type="text/javascript" src="/mylearn/src/js/lib/react/react-dom.js"></script>
+    <script type="text/javascript" src="/mylearn/src/js/lib/react/browser.min.js"></script>
+    <!--<script type="text/javascript" src="/mylearn/src/js/lib/sea.js"></script>-->
+</body>
+
+</html>

@@ -4,6 +4,9 @@ require.config({
 		css: 'lib/css',
 		style: '../css',
 		jquery: 'lib/jquery-2.1.4',
+		react: 'lib/react/react',
+		reactDom: 'lib/react/react-dom',
+		browser: 'lib/react/browser.min',
 		mCustomScrollbar: 'lib/jquery.mousewheel',
 		highcharts: 'lib/highcharts/highcharts',
 		hdata: 'lib/highcharts/modules/data',
@@ -12,6 +15,7 @@ require.config({
 		utils: 'module/jquery.util',
 		zodiac: 'module/zodiac',
 		settlement: 'module/settlement',
+		react: 'module/react/react',
 		tqmallSpeed: 'module/tqmallSpeed'
 	},
 	shim: {
@@ -25,6 +29,7 @@ require(['jquery'], function ($) {
 		util       : 'util',
 		zodiac		: 'zodiac',
 		settlement		: 'settlement',
+		react		: 'react',
 		tqmallSpeed		: 'tqmallSpeed'
 	};
 	function init(){
