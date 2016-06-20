@@ -20,14 +20,16 @@
     <div id="demo6"></div>
     <p>7. react：获取真实的dom节点</p>
     <div id="demo7"></div>
-    <p>8. react：</p>
+    <p>8. react：状态</p>
     <div id="demo8"></div>
-    <p>9. react：</p>
+    <p>9. react：表单</p>
     <div id="demo9"></div>
-    <p>10. react：</p>
+    <p>10. react：组件的生命周期</p>
     <div id="demo10"></div>
-    <p>11. react：</p>
+    <p>11. react：ajax</p>
     <div id="demo11"></div>
+    <p>12. react：promise</p>
+    <div id="demo12"></div>
     <script type="text/babel">
         //demo1
         ReactDOM.render(
@@ -135,10 +137,173 @@
             document.getElementById('demo7')
 
         );
+        //demo8
+        var LinkedState = React.createClass({
+            getInitialState: function(){
+                return {linked : false}
+            },
+            click: function(){
+                this.setState({linked: !this.state.linked})
+            },
+            render: function(){
+                var txt = this.state.linked ? 'like' : 'hate';
+                return (
+                    <p onClick = {this.click}>
+                    you {txt} the state now!
+                    </p>
+                )
+            }
+        });
+
+        ReactDOM.render(
+            <LinkedState/>,
+            document.getElementById('demo8')
+        );
+        //demo9
+        var Input = React.createClass({
+            getInitialState: function(){
+                return {value : 'hello'}
+            },
+            onChange: function(event){
+                this.setState({value: event.target.value})
+            },
+            render: function(){
+                var value = this.state.value;
+                return (
+                    <div>
+                        <input value = {value} onChange = {this.onChange}/>
+                        <p>{value}</p>
+                    </div>
+                )
+            }
+        });
+        ReactDOM.render(
+            <Input />,
+            document.getElementById('demo9')
+        );
+        //demo10
+        var Opacity = React.createClass({
+            getInitialState: function(){
+                return {opacity: 1}
+            },
+            componentDidMount: function(){
+                console.log(1);
+            },
+            componentWillMount: function(){
+                console.log(0);
+            },
+            timer : function(op){
+                var t = this;
+                var setOp = setInterval(function(){
+                    if(op > 0.1){
+                        op =  parseFloat(op - 0.1).toFixed(2);
+                        t.setState({opacity :op});
+                        console.log(op, op > 0.1);
+                    }else{
+                        window.clearInterval(setOp);
+                        return;
+                    }
+                },1000);
+            },
+            render: function(){
+                var opacity = this.state.opacity;
+                //{this.timer(opacity)};
+                return (
+                    <p style = {{opacity: this.state.opacity}} >
+                        hello {this.props.name} {this.state.opacity}
+                    </p>
+                )
+            }
+        });
+        ReactDOM.render(
+            <Opacity name = "lulu"/>,
+            document.getElementById('demo10')
+        );
+        //demo11
+        var GetData = React.createClass({
+            getInitialState: function(){
+                return {
+                    link: '',
+                    name: '',
+                    img: ''
+                }
+            },
+            componentDidMount: function(){
+                $.get(this.props.source, function(result){
+                    var rs = result['data']['groupInfoBOPagingResult']['list'][0]['groupGoodsInfoBOs'][0];
+                    console.log(rs);
+                    if(this.isMounted){
+                        console.log('success');
+                        this.setState({
+                            username: rs.goodsName,
+                            img: rs.goodsImg,
+                            link: rs.goodsImg
+                        })
+                    }
+                }.bind(this));
+            },
+            render: function(){
+                return (
+                    <div>
+                        <p>名称： {this.state.username}!</p>
+                        <a href={this.state.link} ><img src = {this.state.img}/></a>
+                    </div>
+                )
+            }
+        });
+        ReactDOM.render(
+            <GetData source="../../data/common.json"/>,
+            document.getElementById('demo11')
+        );
+        //demo12
+        var GoodsList = React.createClass({
+            getInitialState: function(){
+                return ({
+                    loading: true,
+                    error: null,
+                    data: null
+                });
+            },
+            componentDidMount: function(){
+                this.props.promise.then(
+                    value => this.setState({loading: false, data: value}),
+                    error => this.setState({loading: false, data: error})
+                );
+            },
+            render: function(){
+                if(this.state.loading){
+                    return <p> loading... </p>;
+                }else if(this.state.error != null){
+                    return <p>{this.state.error}</p>;
+                }else{
+                    var goodslists = this.state.data.data.groupInfoBOPagingResult.list;
+                    var goodslist = goodslists.map(function (goods) {
+                        var good = goods['groupGoodsInfoBOs'][0];
+                        return (
+                            <li key={good.goodsId}>
+                                <a href={good.goodsImg}>{good.goodsName}</a>  {good.priceName}: {good.price}
+                            </li>
+                        );
+                    });
+                    return (
+                        <div>
+                            <h1>商品列表：</h1>
+                            <ol>{goodslist}</ol>
+                        </div>
+                    );
+                }
+            }
+
+        });
+        ReactDOM.render(
+          <GoodsList promise={$.getJSON('../../data/common.json')} />,
+          document.getElementById('demo12')
+        );
     </script>
     <script type="text/javascript" src="/mylearn/src/js/lib/react/react.js"></script>
     <script type="text/javascript" src="/mylearn/src/js/lib/react/react-dom.js"></script>
     <script type="text/javascript" src="/mylearn/src/js/lib/react/browser.min.js"></script>
+    <script type="text/javascript" src="/mylearn/src/js/lib/jquery-2.0.3.js"></script>
     <!--<script type="text/javascript" src="/mylearn/src/js/lib/sea.js"></script>-->
 </body>
 

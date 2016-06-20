@@ -9,7 +9,9 @@
   "author": "lu.wei",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "ccap": "^0.6.5",
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
