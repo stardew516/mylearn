@@ -16,7 +16,8 @@ require.config({
 		zodiac: 'module/zodiac',
 		settlement: 'module/settlement',
 		react: 'module/react/react',
-		tqmallSpeed: 'module/tqmallSpeed'
+		tqmallSpeed: 'module/tqmallSpeed',
+		weilu: 'module/weilu'
 	},
 	shim: {
 		util: ['utils']
@@ -24,23 +25,21 @@ require.config({
 	urlArgs: "v=" +  (new Date()).getTime()
 });
 require(['jquery'], function ($) {
-
 	var hash = {
 		util       : 'util',
 		zodiac		: 'zodiac',
 		settlement		: 'settlement',
 		react		: 'react',
-		tqmallSpeed		: 'tqmallSpeed'
+		tqmallSpeed		: 'tqmallSpeed',
+		weilu		: 'weilu'
 	};
-	function init(){
+	!function init(){
 		if ($("#router").val() in hash) {
 			require([hash[$("#router").val()]], function (controller) {
 				controller.init();
 			});
 		}
-	}
-
-	init();
+	}();
 
 	return {
 		init: init
