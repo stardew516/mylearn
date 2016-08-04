@@ -3130,6 +3130,7 @@ jQuery.extend({
 										.fail( newDefer.reject )
 										.progress( newDefer.notify );
 								} else {
+									//返回一个对象  ： 返回多个对象
 									newDefer[ action + "With" ]( this === promise ? newDefer.promise() : this, fn ? [ returned ] : arguments );
 								}
 							});
@@ -3146,7 +3147,7 @@ jQuery.extend({
 			},
 			deferred = {};
 
-		// Keep pipe for back-compat   then和pipe是同一个方法  代码一样   功能不一样  为了兼容jquery老版本  管道机制
+		// Keep pipe for back-compat   then和pipe是同一个方法  代码一样    为了兼容jquery老版本  管道机制
 		promise.pipe = promise.then;
 
 		// Add list-specific methods	第一步最终都是围绕这add方法 	第二步deferred对象扩充6个方法
