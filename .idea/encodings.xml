@@ -5,5 +5,8 @@
     <file url="file://$PROJECT_DIR$/src/css/sass/common/mixin.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/css/sass/common/reset.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/css/sass/common/variable.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/page/loadplate.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/page/loadplate.ftl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/page/loadplate.js" charset="UTF-8" />
   </component>
 </project>
